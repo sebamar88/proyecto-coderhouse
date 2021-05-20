@@ -1,0 +1,24 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-bt": "node-sass --include-path scss bootstrap/bootstrap.scss css/bootstrap.css",
+    "watch-bt": "nodemon -e scss -x \"npm run build-bt\""
+  },
+  "keywords": [
+    "sass",
+    "Sebastian",
+    "Martinez"
+  ],
+  "author": "Sebastian Martinez",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
