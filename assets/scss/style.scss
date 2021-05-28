@@ -476,7 +476,7 @@
     }
 
     .servicios__card {
-    @include card(servicios);
+        @include card(servicios);
         h3{
             margin-top: 1rem;
         }
