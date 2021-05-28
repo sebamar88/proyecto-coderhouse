@@ -470,9 +470,8 @@
             align-items: center;
         }@else if $type == productos{
             @extend .servicios__card;
-            background: linear-gradient(145deg, #c4c6c9, #ffffff);
+            background: linear-gradient(145deg, #c4c6c9f8, #ffffff);
         }        
-
     }
 
     .servicios__card {
