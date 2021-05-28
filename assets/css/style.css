@@ -200,7 +200,7 @@ thead {
 
 /* Finaliza Card Productos */
 /* Inicia Footer */
-footer {
+.footer {
   display: grid;
   grid-template: 2fr 1fr 3fr/1fr;
   max-width: 1100px;
@@ -209,24 +209,24 @@ footer {
   align-items: center;
   column-gap: 1rem; }
   @media (min-width: 768px) {
-    footer {
+    .footer {
       grid-template: 1fr/repeat(3, 1fr); } }
-  footer .footer__menu ul {
+  .footer__menu ul {
     list-style: none;
     margin: 0;
     padding: 0; }
-    footer .footer__menu ul li {
+    .footer__menu ul li {
       padding: 0.5rem 0; }
-      footer .footer__menu ul li a:hover {
+      .footer__menu ul li a:hover {
         color: black; }
-  footer .footer__legales {
+  .footer__legales {
     list-style: none;
     margin: 0;
     padding: 0;
     margin-top: 1.5rem; }
-    footer .footer__legales a:hover {
+    .footer__legales a:hover {
       color: black; }
-  footer img {
+  .footer img {
     max-width: 300px; }
 
 /* Finaliza Footer */
@@ -432,11 +432,11 @@ footer {
   @media (min-width: 768px) {
     .testimonials-clean .item {
       height: 220px; } }
-  .testimonials-clean .item .item__box {
+  .testimonials-clean .item__box {
     padding: 30px;
     background-color: #eef4f7;
     position: relative; }
-    .testimonials-clean .item .item__box:after {
+    .testimonials-clean .item__box:after {
       content: '';
       position: absolute;
       left: 30px;
@@ -446,16 +446,16 @@ footer {
       border: 15px solid transparent;
       border-width: 12px 15px;
       border-top-color: #eef4f7; }
-    .testimonials-clean .item .item__box .description {
+    .testimonials-clean .item__box .description {
       font-size: 15px;
       margin-bottom: 0; }
-  .testimonials-clean .item .item__author {
+  .testimonials-clean .item__author {
     margin-top: 28px;
     padding-left: 25px; }
-    .testimonials-clean .item .item__author .name {
+    .testimonials-clean .item__author .name {
       font-weight: bold;
       margin-bottom: 2px; }
-    .testimonials-clean .item .item__author .title {
+    .testimonials-clean .item__author .title {
       font-size: 13px;
       color: #9da9ae; }
 
@@ -484,7 +484,7 @@ footer {
 footer a {
   font-size: 1rem; }
 
-footer .rrss .rrss__links .rrss__icons {
+footer .rrss__links .rrss__icons {
   font-size: 1.5rem;
   margin: 0 0.5rem;
   padding: 1rem 1.1rem;
@@ -492,7 +492,7 @@ footer .rrss .rrss__links .rrss__icons {
   border-radius: 50%;
   transition: all 0.5s ease; }
 
-footer .rrss .rrss__links:hover .rrss__icons {
+footer .rrss__links:hover .rrss__icons {
   background-color: #f05300;
   color: white; }
 

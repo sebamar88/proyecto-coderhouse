@@ -229,7 +229,7 @@
     
     /* Inicia Footer */
     
-    footer {
+    .footer {
     display: grid;
     grid-template: 2fr 1fr 3fr/1fr;
     max-width: 1100px;
@@ -241,7 +241,7 @@
             grid-template: 1fr / repeat(3, 1fr);
         
         }
-        .footer__menu ul {
+        &__menu ul {
             list-style: none;
             margin: 0;
             padding: 0;
@@ -253,7 +253,7 @@
                 }
             }
         
-        .footer__legales {
+        &__legales {
             list-style: none;
             margin: 0;
             padding: 0;
@@ -543,7 +543,7 @@
                     height: 220px;
                 
                 }
-                .item__box {
+                &__box {
                     padding: 30px;
                     background-color: #eef4f7;
                     position: relative;
@@ -563,7 +563,7 @@
                         margin-bottom: 0;
                         }
                     }
-                .item__author {
+                &__author {
                     margin-top: 28px;
                     padding-left: 25px;
                     .name {
@@ -621,7 +621,7 @@ footer {
         font-size: 1rem;
     }
     .rrss{
-        .rrss__links {
+        &__links {
             .rrss__icons {
                 font-size: 1.5rem;
                 margin: 0 0.5rem;
