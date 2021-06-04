@@ -499,3 +499,16 @@ footer .rrss__links:hover .rrss__icons {
 .error__title {
   font-size: 2rem;
   text-align: center; }
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 850px; } }
+
+.modal-body .card {
+  background-color: #ccc;
+  border-color: #ccc; }
+
+.product__description {
+  list-style: square; }
+  .product__description li {
+    text-align: left; }

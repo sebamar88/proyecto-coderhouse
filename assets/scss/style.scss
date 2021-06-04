@@ -654,3 +654,21 @@ footer {
         text-align: center;
     }
 }
+
+.modal-dialog{
+    @media (min-width:576px){
+        max-width: 850px;
+    }
+}
+
+.modal-body .card{
+    background-color: #ccc;
+    border-color: #ccc;
+}
+
+.product__description {
+    list-style: square;
+    & li{
+        text-align: left;
+    }
+}
