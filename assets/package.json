@@ -1,7 +1,7 @@
 {
-  "name": "assets",
+  "name": "monkeys-barber-shop",
   "version": "1.0.0",
-  "description": "",
+  "description": "package.json de los assets de Monkeys Barber Shop, con este se compila el Sass de la web y el Sass de Bootstrap de la Web",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,9 @@
   "keywords": [
     "sass",
     "Sebastian",
-    "Martinez"
+    "Martinez",
+    "CODERHOUSE",
+    "Monkeys Barber Shop"
   ],
   "author": "Sebastian Martinez",
   "license": "ISC",
