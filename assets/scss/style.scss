@@ -70,7 +70,7 @@
     /* Inicio de Header / Menu */
     header {
     padding: 0.5rem 0;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(240, 83, 0, 0.5);
     & .contenedor {
         display: grid;
         align-items: center;
@@ -589,7 +589,7 @@
 .footer {
     -webkit-box-shadow: 0px -4px 3px rgba(240, 83, 0, 0.5);
     -moz-box-shadow: 0px -4px 3px rgba(240, 83, 0, 0.5);
-    box-shadow: 0px -4px 3px rgba(240, 83, 0, 0.5);
+    box-shadow: 0px -8px 6px rgba(240, 83, 0, 0.5);
     & a {
         font-size: 1rem;
     }
