@@ -9,7 +9,7 @@
 
     @for $i from 1 through 6 {
         h#{$i}{
-            font-family: "Montserrat", sans-serif;
+            font-family: "Black Drama Demo";
             color: $naranja;
             font-weight: 600;
         }
@@ -19,7 +19,7 @@
     $resta: .75rem;
 
     h1 {
-    font-size: $tamanio;
+    font-size: $tamanio + 1rem;
     margin: 0;
     }    
     h2 {
@@ -37,7 +37,7 @@
     color: #000;
     /* font-size: 1.6rem; */
     font-size: 1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     }
     a {
     font-family: "Montserrat", sans-serif;
@@ -703,4 +703,9 @@
 select.form-control{
     color:#000;
     font-weight: 600;
+}
+
+a.nav-link {
+    font-family: Black Drama Demo;
+    font-size: 1.75rem;
 }
