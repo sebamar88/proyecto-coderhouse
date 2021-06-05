@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="my-3 my-md-0 col-md-6">
-                    <form name="contact" netlify>
+                    <form id="contact" name="contact" netlify>
                         <input class="form-control my-2" type="text" name="nombre" placeholder="Nombre">
                         <input class="form-control my-2" type="text" name="apellido" placeholder="Apellido" >
                         <select class="form-control my-2" name="asunto">
@@ -142,7 +142,7 @@
 
         const handleSubmit = (e) => {
         e.preventDefault()
-        let myForm = document.getElementById('pizzaOrder');
+        let myForm = document.getElementById('contact');
         let formData = new FormData(myForm)
         fetch('/', {
             method: 'POST',
