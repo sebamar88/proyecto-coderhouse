@@ -357,10 +357,18 @@ thead {
 /* Finaliza Tienda */
 /* Inicia Contacto */
 #contacto {
-  background-color: #d1d2d3; }
+  background: linear-gradient(0deg, rgba(63, 63, 62, 0.85), rgba(54, 54, 53, 0.65)), url("../img/contacto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 50%; }
+  #contacto h1 {
+    -webkit-text-fill-color: #f05300;
+    -webkit-text-stroke: 2px #000; }
   #contacto button {
     font-size: 1.25rem;
     font-weight: 600; }
+  #contacto form span {
+    color: #fff; }
 
 /* Finaliza Contacto */
 /* POST BOOTSTRAP */
@@ -510,3 +518,15 @@ thead {
   list-style: square; }
   .product__description li {
     text-align: left; }
+
+.form-control {
+  background: rgba(255, 255, 255, 0.4); }
+  .form-control:focus {
+    background: rgba(255, 255, 255, 0.6); }
+  .form-control::placeholder {
+    color: #000;
+    font-weight: 600; }
+
+select.form-control {
+  color: #000;
+  font-weight: 600; }

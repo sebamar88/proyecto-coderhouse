@@ -453,10 +453,21 @@
     
     /* Inicia Contacto */
     #contacto {
-    background-color: #d1d2d3;
+        background: linear-gradient(0deg, rgba(63, 63, 62, 0.85), rgba(54, 54, 53, 0.65)),
+        url("../img/contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+        & h1{
+            -webkit-text-fill-color: $naranja;
+            -webkit-text-stroke: 2px #000;
+        }
         & button{
             font-size: 1.25rem;
             font-weight: 600;
+        }
+        & form span{
+            color: #fff;
         }
     }
     
@@ -672,4 +683,20 @@
     & li{
         text-align: left;
     }
+}
+
+.form-control{
+    background: rgba(255,255,255,0.4);
+    &:focus{
+        background: rgba(255,255,255,0.6);
+    }
+    &::placeholder{
+        color:#000;
+        font-weight: 600;
+    }
+}
+
+select.form-control{
+    color:#000;
+    font-weight: 600;
 }
