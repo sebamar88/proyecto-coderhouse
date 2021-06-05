@@ -536,3 +536,6 @@ select.form-control {
 a.nav-link {
   font-family: 'Black Drama Demo';
   font-size: 1.75rem; }
+
+.ratio {
+  height: 100%; }
