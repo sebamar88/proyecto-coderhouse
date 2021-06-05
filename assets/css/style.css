@@ -362,8 +362,10 @@ thead {
   background-size: cover;
   background-position: 100% 50%; }
   #contacto h1 {
-    -webkit-text-fill-color: #f05300;
-    -webkit-text-stroke: 2px #000; }
+    padding: 2vh 2vw;
+    background: linear-gradient(0deg, #aaaaa9, rgba(228, 228, 225, 0.85));
+    display: inline-block;
+    margin-bottom: 1rem; }
   #contacto button {
     font-size: 1.25rem;
     font-weight: 600; }
