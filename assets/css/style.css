@@ -415,7 +415,7 @@ thead {
     background-color: #e3e3e3;
     position: relative; }
     .testimonials-clean .item__box:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 30px;
       bottom: -24px;
@@ -443,14 +443,14 @@ thead {
   object-position: 50% 70%; }
 
 .personal__contenedor {
-  transition: all .5s ease-in-out; }
+  transition: all 0.5s ease-in-out; }
   .personal__contenedor:hover {
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     transform: scale(1.1); }
   .personal__contenedor p {
     margin-top: 1rem;
     font-weight: bold;
-    margin-bottom: .5rem; }
+    margin-bottom: 0.5rem; }
 
 @media (min-width: 992px) {
   .navbar__logo {
@@ -534,7 +534,7 @@ select.form-control {
   font-weight: 600; }
 
 a.nav-link {
-  font-family: 'Black Drama Demo';
+  font-family: "Black Drama Demo";
   font-size: 1.75rem; }
 
 .ratio {
