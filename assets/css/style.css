@@ -33,7 +33,8 @@ h6 {
 
 h1 {
   font-size: 4rem;
-  margin: 0; }
+  margin: 0 0 .75rem 0;
+  line-height: 1; }
 
 h2 {
   font-size: 2.25rem; }
@@ -47,7 +48,6 @@ img {
 
 p {
   color: #000;
-  /* font-size: 1.6rem; */
   font-size: 1rem;
   font-family: "Montserrat", sans-serif; }
 
@@ -162,6 +162,9 @@ thead {
   @media (min-width: 768px) {
     #branding .contenedor {
       grid-template: 1fr/repeat(2, 1fr); } }
+
+#branding p {
+  text-align: justify; }
 
 /* Inicia Card Productos */
 #modal-X p {
