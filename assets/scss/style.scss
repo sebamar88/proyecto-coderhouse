@@ -411,9 +411,17 @@ thead {
 
 #productos .fila {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 1rem;
   column-gap: 2rem;
+  padding: 0 1rem;
+  @media (min-width:576px) {
+    grid-template-columns: repeat(2, 1fr);    
+  }
+  @media (min-width:768px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
 }
 
 @mixin card($type) {
@@ -712,4 +720,8 @@ a.nav-link {
 
 .ratio {
   height: 100%;
+}
+
+.navbar-brand {
+  max-width: 70%;
 }

@@ -346,9 +346,17 @@ thead {
 
 #productos .fila {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 1rem;
-  column-gap: 2rem; }
+  column-gap: 2rem;
+  padding: 0 1rem; }
+  @media (min-width: 576px) {
+    #productos .fila {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 768px) {
+    #productos .fila {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0; } }
 
 .servicios__card, .productos__card {
   margin: 1rem 0;
@@ -568,3 +576,6 @@ a.nav-link {
 
 .ratio {
   height: 100%; }
+
+.navbar-brand {
+  max-width: 70%; }
