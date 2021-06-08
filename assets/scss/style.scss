@@ -16,7 +16,7 @@ $tamanio: 3rem;
 $resta: 0.75rem;
 
 h1 {
-  font-size: $tamanio + 1rem;
+  font-size: clamp($tamanio - 0.5rem, 5vw, $tamanio + 1rem);
   margin: 0 0 .75rem 0;
   line-height: 1;
 }
@@ -564,7 +564,9 @@ thead {
 
 @media (min-width: 992px) {
   .navbar__logo {
-    max-width: 18.75rem;
+    max-width: 16rem;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -581,10 +583,13 @@ thead {
   -webkit-box-shadow: 0px -4px 3px rgba(240, 83, 0, 0.5);
   -moz-box-shadow: 0px -4px 3px rgba(240, 83, 0, 0.5);
   box-shadow: 0px -8px 6px rgba(240, 83, 0, 0.5);
+  padding: 0 1rem;
   & a {
     font-size: 1rem;
   }
   & .rrss {
+    display: flex;
+    justify-content: center;
     &__links {
       .rrss__icons {
         font-size: 1.5rem;
@@ -610,6 +615,7 @@ thead {
     column-gap: 1rem;
     @media (min-width: 768px) {
       grid-template: 1fr / repeat(3, 1fr);
+      max-width: 1320px;
     }
   }
   &__menu ul {
@@ -618,6 +624,10 @@ thead {
     padding: 0;
     li {
       padding: 0.5rem 0;
+      text-align: center;
+      @media (min-width:768px){
+        text-align: start;
+      }
       a:hover {
         color: black;
       }
@@ -625,16 +635,25 @@ thead {
   }
 
   &__legales {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+    @media (min-width:768px){
+      text-align: end;
+    }
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 1rem;
+    }
     a:hover {
       color: black;
     }
   }
   img {
-    max-width: 300px;
+    max-width: 16rem;
+    width: 100%;
+    height: auto;
   }
 }
 
