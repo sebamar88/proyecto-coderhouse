@@ -366,7 +366,7 @@ thead {
   @media (min-width:576px) {
     grid-template-columns: repeat(2, 1fr);    
   }
-  @media (min-width:768px) {
+  @media (min-width:992px) {
     grid-template-columns: repeat(3, 1fr);
     padding: 0;
   }
@@ -418,7 +418,7 @@ thead {
   @media (min-width:576px) {
     grid-template-columns: repeat(2, 1fr);    
   }
-  @media (min-width:768px) {
+  @media (min-width:992px) {
     grid-template-columns: repeat(3, 1fr);
     padding: 0;
   }
