@@ -366,7 +366,12 @@ thead {
   box-shadow: 9.91px 9.91px 15px #d1d2d3, -9.91px -9.91px 15px #fff;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out; }
+  .servicios__card:hover, .productos__card:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.025); }
   .servicios__card h3, .productos__card h3 {
     margin-top: 1rem; }
 
@@ -579,3 +584,9 @@ a.nav-link {
 
 .navbar-brand {
   max-width: 70%; }
+
+.turnos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between; }
