@@ -6,12 +6,6 @@
  */
 /* Inicio de Modificaciones de variables */
 /* 62.5% = 10px */
-/* $h1-font-size:                $font-size-base * 4.8 !default;
-    $h2-font-size:                $font-size-base * 3.5 !default;
-    $h3-font-size:                $font-size-base * 2.8 !default;
-    $h4-font-size:                $font-size-base * 2.4 !default;
-    $h5-font-size:                $font-size-base * 2.1 !default;
-    $h6-font-size:                $font-size-base * 1.8 !default; */
 /* Fin de Modificaciones de variables */
 :root {
   --bs-blue: #0d6efd;
