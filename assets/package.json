@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "build-bt": "node-sass --include-path scss bootstrap/bootstrap.scss css/bootstrap.min.css --output-style compressed",
+    "build-bt": "node-sass --include-path scss bootstrap/bootstrap.scss css/bootstrap.css",
     "watch-bt": "nodemon -e scss -x \"npm run build-bt\""
   },
   "keywords": [
