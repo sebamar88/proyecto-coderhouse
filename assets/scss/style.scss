@@ -738,3 +738,11 @@ a.nav-link {
   width: 100%;
   justify-content: space-between;
 }
+
+#copyright{
+  margin-top: .5rem;
+  & span{
+    display: block;
+    font-weight: 600;
+  }
+}

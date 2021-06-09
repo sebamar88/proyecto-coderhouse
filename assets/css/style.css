@@ -590,3 +590,9 @@ a.nav-link {
   flex-direction: row;
   width: 100%;
   justify-content: space-between; }
+
+#copyright {
+  margin-top: .5rem; }
+  #copyright span {
+    display: block;
+    font-weight: 600; }
