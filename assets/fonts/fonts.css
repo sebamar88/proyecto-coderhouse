@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Black Drama Demo';
-    src: url('BlackDramaDemo.woff2') format('woff2'),
-        url('BlackDramaDemo.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: fallback;
-}
-
