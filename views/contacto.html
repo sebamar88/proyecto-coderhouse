@@ -80,20 +80,20 @@
                 </div>
                 <div class="my-3 my-md-0 col-md-6">
                     <form id="contact" name="contact" netlify>
-                        <input class="form-control my-2" type="text" name="nombre" placeholder="Nombre">
-                        <input class="form-control my-2" type="text" name="apellido" placeholder="Apellido" >
-                        <input class="form-control my-2" type="text" name="email" placeholder="E-mail" >
-                        <select class="form-control my-2" name="asunto">
+                        <input class="form-control my-2" type="text" name="nombre" id="nombre" value="" placeholder="Nombre" onkeyup='validateName()'>
+                        <input class="form-control my-2" type="text" name="apellido" id="apellido" value="" placeholder="Apellido" >
+                        <input class="form-control my-2" type="text" name="email" id="email" value="" placeholder="E-mail" >
+                        <select class="form-control my-2" name="asunto" value="" id="asunto">
                             <option value="0">-- Seleccione Asunto --</option>
                             <option value="Contacto comercial">Contacto comercial</option>
                             <option value="Solicitar turno">Solicitar turno</option>
                             <option value="Compras por mayor">Compras por mayor</option>
                         </select>
-                        <textarea class="form-control my-2" name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <textarea class="form-control my-2" name="mensaje" value="" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
                         <input type="checkbox" name="terminos" class="me-2" ><span>Acepto los terminos y condiciones del servicio</span>
                         <div class="my-3 text-center">
                             <button class="btn btn-outline-warning bg-white" type="reset">Resetear campos</button>
-                            <button class="btn btn-warning" type="submit">Enviar</button>
+                            <button class="btn btn-warning" onclick='return validateForm()' type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -142,22 +142,107 @@
     </footer>
     <!-- Fin Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script>
-        
+    <script src="../assets/js/notiflix-aio.js"></script>
+    <script> 
+    
+    /* Validando formulario */
 
-        const handleSubmit = (e) => {
-        e.preventDefault()
-        let myForm = document.getElementById('contact');
-        let formData = new FormData(myForm)
-        fetch('/', {
-            method: 'POST',
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString()
-        }).then(() => document.getElementById("contact").reset()).catch((error) =>
-            alert(error))
+    const validateMessage = () =>{
+            const mensajeForm = document.getElementById('mensaje').value;
+            if(mensajeForm.length === 0){
+                Notiflix.Report.Failure( 
+                    'Falta mensaje',
+                    'Debes ingresar tu mensaje',
+                    'Cerrar' 
+                    );
+                    return false; 
+            }
+            return true;
         }
+
+        const validateName = () =>{
+            const nombreForm = document.getElementById('nombre').value;
+            if(nombreForm.length === 0){
+                Notiflix.Report.Failure( 
+                    'Falta nombre',
+                    'Debes ingresar tu nombre',
+                    'Cerrar' 
+                    );
+                    return false; 
+            }
+            return true;
+        }
+        const validateSurname = () =>{
+            const apellidoForm = document.getElementById('apellido').value;
+            if(apellidoForm.length === 0){
+                Notiflix.Report.Failure( 
+                    'Falta apellido',
+                    'Debes ingresar tu apellido',
+                    'Cerrar' 
+                    );
+                    return false; 
+            }
+            return true;
+        }
+        const validateEmail = () =>{
+            const emailForm = document.getElementById('email').value;
+            if(emailForm.length === 0){
+                Notiflix.Report.Failure( 
+                    'Falta email',
+                    'Debes ingresar tu email',
+                    'Cerrar' 
+                    );
+                    return false; 
+            }
+            if(!emailForm.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+
+                Notiflix.Report.Failure( 
+                    'Email invalido',
+                    'Debes ingresar un email valido',
+                    'Cerrar' 
+                    );
+                    return false;
+
+            }
+            return true;
+        }
+        const validateSubject = () =>{
+            const asuntoForm = document.getElementById('asunto').value;
+            if(asuntoForm === 0){
+                Notiflix.Report.Failure( 
+                    'Falta asunto',
+                    'Debes ingresar tu asunto',
+                    'Cerrar' 
+                    );
+                    return false; 
+            }
+            return true;
+        }
+    
         
-        document.querySelector("form").addEventListener("submit", handleSubmit);
+    const validateForm = () =>{
+
+        if(!validateName() || !validateSubject() || !validateEmail() || !validateMessage() || !validateSurname()){
+            return false;
+        }
+
+    }
+    
+    /* Ajax del formulario */
+    
+    const handleSubmit = (e) => {
+    e.preventDefault()
+    let myForm = document.getElementById('contact');
+    let formData = new FormData(myForm)
+    fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+    }).then(() => document.getElementById("contact").reset()).catch((error) =>
+        alert(error))
+    }
+    
+    document.querySelector("form").addEventListener("submit", handleSubmit);
     </script>
 </body>
 </html>
