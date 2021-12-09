@@ -57,9 +57,6 @@ a {
   text-decoration: none;
   font-weight: 600; }
 
-.fas.fa-star {
-  color: #9e9e0c; }
-
 /* Inician Utilidades */
 .section__py {
   padding: 2rem 0; }
@@ -93,39 +90,8 @@ nav {
   align-items: center;
   justify-content: center; }
 
-.menuPreboots {
-  list-style: none;
-  display: grid;
-  grid-template: repeat(5, 1fr)/1fr;
-  padding: 0;
-  width: 100%;
-  align-items: center; }
-  @media (min-width: 768px) {
-    .menuPreboots {
-      grid-template: 1fr/repeat(5, 1fr); } }
-  .menuPreboots li {
-    text-align: center; }
-    .menuPreboots li a {
-      text-decoration: none;
-      font-family: "Montserrat", sans-serif;
-      color: #f05300;
-      font-weight: 600;
-      text-transform: uppercase; }
-
 /* Fin de Header / Menu */
 /* Tabla */
-.tabla ul {
-  list-style: none;
-  padding: 0.5rem; }
-  .tabla ul li {
-    color: #f05300;
-    font-weight: 600; }
-
-.tabla ol {
-  padding: 0.5rem; }
-  .tabla ol li {
-    color: #0073da;
-    font-weight: 600; }
 
 td {
   padding: 1rem; }
@@ -138,19 +104,6 @@ td:nth-child(2n + 1) {
 
 thead {
   background-color: aquamarine; }
-
-.tabs {
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: row;
-  list-style: none; }
-  .tabs li {
-    border: 1px solid #ccc;
-    padding: 0.5rem; }
-    .tabs li a {
-      font-family: "Montserrat", sans-serif;
-      text-decoration: none;
-      color: black; }
 
 #branding .contenedor {
   display: grid;
@@ -167,8 +120,6 @@ thead {
   text-align: justify; }
 
 /* Inicia Card Productos */
-#modal-X p {
-  padding: 0.5rem; }
 
 .cantidad {
   color: #f05300;
@@ -181,25 +132,6 @@ thead {
     width: 20%;
     border: 2px solid #aaa;
     border-radius: 10%; }
-
-.add-to-cart {
-  padding: 1rem;
-  background-color: white;
-  border: 2px solid #f05300;
-  color: #f05300;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  margin-left: 0.5rem; }
-
-.comprar {
-  padding: 1rem;
-  background-color: #f05300;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  margin-left: 0.5rem; }
 
 /* Finaliza Card Productos */
 /* Inicia Index.html */
@@ -214,51 +146,14 @@ thead {
 #anexo p {
   padding-bottom: 1rem; }
 
-#testimoniales h3 {
-  text-align: center;
-  margin-bottom: 1rem; }
 
-#testimoniales .contenedor .fila {
-  display: grid;
-  grid-template: 4fr/1fr;
-  column-gap: 1rem; }
-  @media (min-width: 768px) {
-    #testimoniales .contenedor .fila {
-      grid-template: 2fr/repeat(2, 1fr); } }
-  @media (min-width: 992px) {
-    #testimoniales .contenedor .fila {
-      grid-template: 1fr/repeat(4, 1fr); } }
-
-#testimoniales .contenedor div {
-  text-align: center; }
-
-#testimoniales .contenedor p {
-  margin-bottom: 0.5rem; }
-
-#testimoniales .contenedor i {
-  font-size: 1.5rem; }
-
-#testimoniales .contenedor #carrusel {
-  display: grid;
-  grid-template: repeat(3, 1fr)/1fr;
-  column-gap: 1rem;
-  row-gap: 1rem; }
-
-#galeria .contenedor #carrusel {
-  padding: 0 15px; }
-
-#carrusel img,
 .galeria img {
   transition: all 0.5s ease-in; }
 
-#carrusel img:hover,
+
 .galeria img:hover {
   transition: all 0.5s ease-out;
   transform: scale(1.05); }
-
-@media (min-width: 768px) {
-  #galeria .contenedor #carrusel {
-    grid-template: 1fr/repeat(3, 1fr); } }
 
 /* Finaliza Index.html */
 /* Inicia Nosotros */
@@ -297,7 +192,7 @@ thead {
 .banner {
   height: 50vh;
   text-align: center;
-  background: linear-gradient(0deg, rgba(63, 63, 62, 0.6), rgba(54, 54, 53, 0.4)), url("../img/banner.jpeg");
+  background: linear-gradient(0deg, rgba(63, 63, 62, 0.6), rgba(54, 54, 53, 0.4)), url("../../assets/img/banner.jpeg");
   background-position: 50% 50%;
   display: flex;
   justify-content: center;
@@ -383,7 +278,7 @@ thead {
 /* Finaliza Tienda */
 /* Inicia Contacto */
 #contacto {
-  background: linear-gradient(0deg, rgba(63, 63, 62, 0.85), rgba(54, 54, 53, 0.65)), url("../img/contacto.jpg");
+  background: linear-gradient(0deg, rgba(63, 63, 62, 0.85), rgba(54, 54, 53, 0.65)), url("../../assets/img/contacto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 50%; }
@@ -462,11 +357,6 @@ thead {
     .testimonials-clean .item__author .title {
       font-size: 13px;
       color: #9da9ae; }
-
-.carousel-item img {
-  max-height: 600px;
-  object-fit: cover;
-  object-position: 50% 70%; }
 
 .personal__contenedor {
   transition: all 0.5s ease-in-out; }
